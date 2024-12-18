@@ -1,22 +1,39 @@
+---
+import "@fontsource-variable/onest";
+import Header from "../components/Header.astro";
+---
+
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Porfolio</title>
 	</head>
 	<body>
+		<Header />
 		<slot />
 	</body>
 </html>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+<style is:global>
+:root{
+	color-scheme: Ligth dark;
+}
+
+html{
+	font-family: "Ones Variable",system-ui, sans-serif;
+	color-scheme: Ligth dark;
+}
+
+body{
+	background: #050505;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+	
+
+}
+
 </style>
